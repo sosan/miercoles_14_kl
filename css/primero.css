@@ -1,0 +1,77 @@
+html
+{
+
+    height: 100vh;
+    width: 100vw;
+}
+
+
+main
+{
+    display: grid;
+    grid-template-columns: 20% 1fr 1fr 1fr 20%;
+    grid-template-rows: 200px auto auto;
+    grid-template-areas: 
+    ". . c . ."
+    ". p p p ."
+    ". g g g ."
+    ;
+}
+
+
+.corona
+{
+    grid-area: c;
+    width: 200px;
+
+}
+
+
+.parrafo
+{
+    grid-area: p;
+
+}
+
+.galeria
+{
+
+    grid-area: g;
+    
+   
+
+
+}
+
+.galeria-ul
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "imagen1 imagen2 imagen3";
+    gap: 20px;
+}
+
+
+.galeria-ul-elemento1
+{
+    grid-area: imagen1;
+
+}
+
+.galeria-ul-elemento2
+{
+    grid-area: imagen2;
+
+}
+
+
+.galeria-ul-elemento3
+{
+    grid-area: imagen3;
+
+}
+
+.imagen
+{
+    width: 100%;
+}
