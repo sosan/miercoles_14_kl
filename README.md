@@ -1,7 +1,7 @@
 PRIMERO
 =============
-GITHUB PAGES: https://sosan.github.io/miercoles_14_kl/primero.html
-NETLIFY: https://focused-morse-12dd92.netlify.app/primero.html
+GITHUB PAGES: https://sosan.github.io/miercoles_14_kl/primero.html<br>
+NETLIFY: https://focused-morse-12dd92.netlify.app/primero.html<br>
 
 <img src="./img/desktop/web.png">
 
