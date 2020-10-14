@@ -1,8 +1,9 @@
-WEB
-========
-GITHUB PAGES: https://sosan.github.io/miercoles_14_kl/
-NETLIFY: https://focused-morse-12dd92.netlify.app/
+PRIMERO
+=============
+GITHUB PAGES: https://sosan.github.io/miercoles_14_kl/primero.html
+NETLIFY: https://focused-morse-12dd92.netlify.app/primero.html
 
+<img src="./img/desktop/web.png">
 
 
 # Plantilla FrontEnd
