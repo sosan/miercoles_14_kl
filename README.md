@@ -1,3 +1,10 @@
+WEB
+========
+GITHUB PAGES: https://sosan.github.io/miercoles_14_kl/
+NETLIFY: https://focused-morse-12dd92.netlify.app/
+
+
+
 # Plantilla FrontEnd
 ##### Plantilla Básica para poder empezar casi cualquier proyecto en **FrontEnd**.
 
