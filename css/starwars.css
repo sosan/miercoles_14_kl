@@ -1,0 +1,218 @@
+@font-face {
+    font-family: "starwars";
+    src: url("../font/deathstar.woff") format("woff");
+}
+
+
+html
+{
+    font-family: "starwars", sans-serif;
+    font-size: 16px;
+    width: 100vw;
+    height: 100vh;
+}
+
+body
+{
+    background: url("../img/desktop/background_starwars.webp");
+    /* background-position: top; */
+    background-size: auto;
+    background-repeat: no-repeat;
+
+
+
+}
+
+
+
+main
+{
+    display: grid;
+    grid-template-rows: 140px repeat(4, 150px);
+    grid-template-areas: 
+    "ti"
+    "b1"
+    "b2"
+    "b3"
+    "b4"
+    ;
+
+    row-gap: 10px
+}
+
+
+
+.section-titulo
+{
+    grid-area: ti;
+    /* justify-self: flex-start;
+    align-self: flex-end; */
+
+    background: url("../img/desktop/logo_starwars.webp");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left bottom;
+    width: 100%;
+
+}
+
+
+.conjunto_banner1
+{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: 
+    "b1 b1 b1 b1 e1"
+    ;
+
+    column-gap: 10px
+
+}
+
+.conjunto_banner2
+{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: 
+    "b2 b2 b2 e2 ."
+    ;
+
+    column-gap: 10px
+}
+
+.conjunto_banner3
+{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: 
+    "b3 b3 b3 b3 e3"
+    ;
+    column-gap: 10px
+}
+
+.conjunto_banner4
+{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: 
+    "b4 . . . ."
+    ;
+    column-gap: 10px
+}
+
+
+
+.baner1
+{
+    grid-area: b1;
+    background: url("../img/desktop/baner1.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* height: 200px; */
+
+    
+}
+
+
+
+
+.baner2
+{
+    grid-area: b2;
+    background: url("../img/desktop/baner2.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* height: 200px; */
+    
+
+}
+
+.baner3
+{
+    grid-area: b3;
+    background: url("../img/desktop/baner3.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* height: 200px; */
+
+}
+
+.baner4
+{
+    grid-area: b4;
+    background: url("../img/desktop/baner4.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+}
+
+.emblema_baner1
+{
+    grid-area: e1;
+    background: url("../img/desktop/emblema_baner_1.webp");
+    background-size: contain;
+    background-position: left top;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    /* width: 200px; */
+
+}
+
+.emblema_baner2
+{
+    grid-area: e2;
+    background: url("../img/desktop/emblema_baner_2.webp");
+    background-size: contain;
+    background-position: left top;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    /* width: 200px; */
+
+
+}
+
+.emblema_baner3
+{
+    grid-area: e3;
+    background: url("../img/desktop/emblema_banner_3.webp");
+    background-size: contain;
+    background-position: left top;
+    background-repeat: no-repeat;
+
+    justify-self: flex-start;
+    
+
+    width: 100%;
+    /* width: 200px; */
+
+}
+
+
+
+
+.section-titulo-titulo
+{
+    font-size: 5ch;
+    color: whitesmoke;
+}
+
+
+
+figure
+{
+    filter: grayscale(1);
+    cursor: pointer;
+}
+
+figure:hover
+{
+    filter: grayscale(0);
+    cursor: pointer;
+}

@@ -1,0 +1,95 @@
+html
+{
+    width: 100vw;
+    height: 100vh;
+
+}
+
+main
+{
+
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    grid-template-rows: 99vh;
+    grid-template-areas: 
+    "aside article"
+    
+    ;
+
+    /* justify-items: flex-end; */
+
+}
+
+
+aside
+{
+    grid-area: aside;
+    
+
+}
+
+article
+{
+    grid-area: article;
+
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+    grid-template-rows: 30% 17% 15%;
+    grid-template-areas: 
+    ". titulo ."
+    ". parrafo ."
+    ". estrella ."
+    ;
+    align-items: flex-end;
+
+}
+
+
+.aside-background
+{
+    background: url("../img/desktop/marvelbackground.webp");
+    /* transform: rotate(-90deg); */
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    filter: drop-shadow(10px 0px 12px black) grayscale(1);
+
+}
+
+
+
+
+.titulo
+{
+    grid-area: titulo;
+    justify-self: center;
+    font-size: 4rem;
+}
+
+.parrafo
+{
+    grid-area: parrafo;
+
+    text-justify: distribute;
+    text-align: justify;
+
+}
+
+
+
+.article-icono
+{
+
+    grid-area: estrella;
+    fill: black;
+    justify-self: center;
+
+}
+
+.article-logo
+{
+    width: 270px;
+    /* width: 100%; */
+    
+}
