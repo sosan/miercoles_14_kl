@@ -214,12 +214,13 @@ section > figure:first-child:hover
 
 section > figure:nth-child(2)
 {
-    filter: blur(0px);
+    filter: blur(0px) invert(0);
+    
 }
 
 section > figure:nth-child(2):hover
 {
-    filter: blur(5px);
+    filter: blur(5px) invert(1);
     cursor: pointer;
 }
 
