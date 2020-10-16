@@ -38,6 +38,7 @@ main
     grid-area: c;
     width: 200px;
     justify-self: center;
+    filter: invert(1)
 
 }
 
