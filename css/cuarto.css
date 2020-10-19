@@ -1,0 +1,133 @@
+
+.galeria
+{
+    display: grid;
+    grid-template-columns: 5% repeat(4, 1fr) 5%;
+    grid-template-rows: 5% repeat(3, 1fr) 40px;
+    grid-template-areas: 
+    ". . . . . ."
+    ". g1 g2 g3 g4 ."
+    ". g5 l1 l1 g6 ."
+    ". g7 l1 l1 g8 ."
+    ". . . . . ."
+    ;
+
+    gap: 1.2%;
+
+}
+
+.galeria1
+{
+    grid-area: g1;
+    width: 100%;
+}
+
+.galeria2
+{
+    grid-area: g2;
+    width: 100%;
+}
+
+.galeria3
+{
+    grid-area: g3;
+    width: 100%;
+}
+
+.galeria4
+{
+    grid-area: g4;
+    width: 100%;
+}
+
+.galeria5
+{
+    grid-area: g5;
+    width: 100%;
+}
+
+.galeria6
+{
+    grid-area: g6;
+    width: 100%;
+}
+
+.galeria7
+{
+    grid-area: g7;
+    width: 100%;
+}
+
+.galeria8
+{
+    grid-area: g8;
+    width: 100%;
+}
+
+
+
+.galeria-sobre
+{
+    z-index: 0;
+}
+
+.galeria-sobre:hover
+{
+    z-index: 1;
+}
+
+
+.logo
+{
+    grid-area: l1;
+
+}
+
+.logo-img
+{
+    width: 100%;
+    height: 99%;
+    border-radius: 10px;
+}
+
+.imagen_web
+{
+    width: 100%;
+    height: 99%;
+    border-radius: 10px;
+
+}
+
+
+
+.gris
+{
+    filter: grayscale(1);
+}
+
+
+.gris:hover
+{
+    filter: grayscale(0);
+ 
+}
+
+
+
+
+.agrandar 
+{
+    transition: transform 250ms ease-in-out;
+}
+
+.agrandar:hover 
+{
+    border-radius: 0px;
+    transform: scale(1.15);
+    
+}
+
+.agrandar:active
+{
+    transform: scale(0.7);
+}

@@ -34,7 +34,7 @@ article
 
     display: grid;
     grid-template-columns: 5% 90% 5%;
-    grid-template-rows: 30% 17% 15%;
+    grid-template-rows: 30% 24% 15%;
     grid-template-areas: 
     ". titulo ."
     ". parrafo ."

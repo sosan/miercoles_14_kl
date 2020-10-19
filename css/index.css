@@ -2,3 +2,236 @@
 /* *** Estilos SOLO para index.html *** */
 /* *********************************** */
 
+.textos
+{
+    display: grid;
+    grid-template-columns: 10px 70px repeat(5, 1fr );
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-areas: 
+    ". . . . . . ."
+    ". l1 . i i i ."
+    ". l2 . i i i ."
+    ". l3 . i i i ."
+    ". l4 . i i i ."
+    ". . . i i i ."
+    ". . . i i i ."
+    ". . . i i i ."
+    ". . . i i i ."
+    ". . . i i i ."
+    ". . . i i i ."
+    ". . . i i i ."
+    ". . . i i i ."
+    ". . . i i i ."
+    ;
+    justify-items: flex-start;
+    /* align-items: flex-start; */
+
+}
+
+
+
+/* .textos
+{
+    grid-area: t;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "l1"
+    "l2"
+    "l3"
+    "l4"
+
+    ;
+
+} */
+
+
+.texto-line-height
+{
+    line-height: 3rem;
+    height: 50px;
+    text-transform: capitalize;
+}
+
+
+.link1
+{
+
+    grid-area: l1;
+    font-size: 1rem;
+}
+
+.link1:hover
+{
+    grid-area: l1;
+    font-size: 2rem;
+
+
+
+}
+
+.link1:hover ~ .imagen_web{
+    
+    grid-area: i;
+    background-image: url("../img/desktop/primero_web.webp");
+    background-size: contain;
+    background-position: top left;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-width: 140px;
+    height: 100%;
+
+    filter: drop-shadow(15px );
+
+
+}
+
+.link2:hover ~ .imagen_web{
+    
+    grid-area: i;
+    background-image: url("../img/desktop/segundo_web.webp");
+    background-size: contain;
+    background-position: top left;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-width: 140px;
+    height: 100%;
+
+
+}
+
+.link3:hover ~ .imagen_web{
+    
+    grid-area: i;
+    background-image: url("../img/desktop/tercero_web.webp");
+    background-size: contain;
+    background-position: top left;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-width: 140px;
+    height: 100%;
+
+
+}
+
+.link4:hover ~ .imagen_web{
+    
+    grid-area: i;
+    background-image: url("../img/desktop/cuarta_web.webp");
+    background-size: contain;
+    background-position: top left;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-width: 140px;
+    height: 100%;
+
+
+}
+
+
+/* .link1:hover::after
+{
+    content: "";
+
+} */
+
+
+.link2
+{
+
+    grid-area: l2;
+    font-size: 1rem;
+}
+
+.link2:hover
+{
+    grid-area: l2;
+    font-size: 2rem;
+}
+
+
+
+
+.link3
+{
+
+    grid-area: l3;
+    font-size: 1rem;
+}
+
+.link3:hover
+{
+    grid-area: l3;
+    font-size: 2rem;
+}
+
+
+
+.link4
+{
+
+    grid-area: l4;
+    font-size: 1rem;
+}
+
+.link4:hover
+{
+    grid-area: l4;
+    font-size: 2rem;
+}
+
+
+.imagen_web
+{
+
+    grid-area: i;
+    background: url("../img/desktop/seleccion_web.svg");
+    background-size: contain;
+    background-position: top left;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-width: 140px;
+    filter: drop-shadow(2px 4px 6px black);
+    
+
+}
+
+
+
+.barraluz 
+{
+    position: relative;
+}
+
+
+
+.barraluz:after 
+{
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transform-origin: bottom left;
+    transition: transform 0.25s ease-in-out;
+}
+
+.barraluz:hover:after
+{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.azul:after
+{
+    background-color: #5851ec;
+
+}
+
+.rojo:after
+{
+    background-color: #c41212;
+}
+
