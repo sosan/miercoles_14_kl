@@ -33,7 +33,7 @@ article
     grid-area: article;
 
     display: grid;
-    grid-template-columns: 5% 90% 5%;
+    grid-template-columns: 5% 1fr 5%;
     grid-template-rows: 30% 24% 15%;
     grid-template-areas: 
     ". titulo ."
@@ -48,11 +48,10 @@ article
 .aside-background
 {
     background: url("../img/desktop/marvelbackground.webp");
-    /* transform: rotate(-90deg); */
     background-position: bottom left;
     background-repeat: no-repeat;
     background-size: cover;
-
+    height: 101%;
     filter: drop-shadow(10px 0px 12px black) grayscale(1);
 
 }
@@ -70,8 +69,6 @@ article
 .parrafo
 {
     grid-area: parrafo;
-
-    text-justify: distribute;
     text-align: justify;
 
 }
@@ -89,7 +86,6 @@ article
 
 .article-logo
 {
-    width: 270px;
-    /* width: 100%; */
+    width: 70vmin;
     
 }
